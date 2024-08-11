@@ -9,7 +9,10 @@ import Link from "next/link";
 
 const Sidebar: React.FC = () => {
   return (
-    <aside className="fixed h-screen left-0 top-0 bg-neutral w-14" id="sidebar">
+    <aside
+      className="fixed h-full left-0 top-0 bottom-0 bg-neutral w-14"
+      id="sidebar"
+    >
       <div className="flex flex-col justify-between items-center h-full w-full py-8">
         {/* top Logo */}
         <div className="logo">
