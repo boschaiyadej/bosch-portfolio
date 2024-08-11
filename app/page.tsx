@@ -1,9 +1,13 @@
-import Sidebar from "./components/sidebar/page";
+import Hero from "./components/hero/Hero";
+import Sidebar from "./components/sidebar/Sidebar";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Sidebar/>
+    <main className="h-screen w-screen bg-base-100">
+      <Sidebar />
+      <div className="w-full flex-row">
+        <Hero />
+      </div>
     </main>
   );
 }
