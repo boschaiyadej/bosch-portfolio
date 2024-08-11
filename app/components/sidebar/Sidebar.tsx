@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { SiGooglescholar } from "react-icons/si";
@@ -6,8 +8,11 @@ import { RiGraduationCapFill } from "react-icons/ri";
 import { BsStack } from "react-icons/bs";
 import { MdOutlineChatBubble } from "react-icons/md";
 import Link from "next/link";
+import { useScroll } from "../../contexts/ScrollContext";
 
 const Sidebar: React.FC = () => {
+  const { scrollTo } = useScroll();
+
   return (
     <aside
       className="fixed h-full left-0 top-0 bottom-0 bg-neutral w-14"
@@ -25,23 +30,20 @@ const Sidebar: React.FC = () => {
         {/* mid sidebar icon */}
         <div className="sidebar">
           <div className="sidebar_menu">
-            <ul className="sidebar_list flex flex-col items-center gap-4">
-              <li>
+            <div className="sidebar_list flex flex-col items-center gap-4">
+              <button onClick={() => scrollTo("hero")}>
                 <GoHomeFill className="text-2xl text-neutral-content hover:text-accent ease-in-out hover:-translate-y-1 hover:scale-110 duration-300" />
-              </li>
-              <li>
+              </button>
+              <button onClick={() => scrollTo("about")}>
                 <GoPersonFill className="text-2xl text-neutral-content hover:text-accent ease-in-out hover:-translate-y-1 hover:scale-110 duration-300" />
-              </li>
-              <li>
+              </button>
+              <button onClick={() => scrollTo("experience")}>
                 <RiGraduationCapFill className="text-2xl text-neutral-content hover:text-accent ease-in-out hover:-translate-y-1 hover:scale-110 duration-300" />
-              </li>
-              <li>
-                <BsStack className="text-2xl text-neutral-content hover:text-accent ease-in-out hover:-translate-y-1 hover:scale-110 duration-300" />
-              </li>
-              <li>
+              </button>
+              <button onClick={() => scrollTo("contact")}>
                 <MdOutlineChatBubble className="text-2xl text-neutral-content hover:text-accent ease-in-out hover:-translate-y-1 hover:scale-110 duration-300" />
-              </li>
-            </ul>
+              </button>
+            </div>
           </div>
         </div>
         {/* bot dark mode icon */}

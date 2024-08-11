@@ -6,14 +6,14 @@ import TechSkills from "./TechnicalSkills";
 
 const About: React.FC = () => {
   return (
-    <section className="min-h-screen h-fit bg-base-100 pl-14" id="about">
+    <section id="about" className="min-h-screen h-fit bg-base-100 pl-14">
       <div className="w-full h-full p-10">
         <h1 className="text-3xl font-bold hover:text-accent py-5">About Me</h1>
         <div className="grid md:grid-cols-2 xl:grid-cols-3">
           <div className="h-fit w-full bg-warning text-warning-content rounded-xl p-10 mb-10">
             <p className="text-justify">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              {`" Hi! My name is Ratchapong Chaiyadej, you can call me Bos. I live in Nonthaburi, Thailand. I graduated with a bachelor's degree in environmental health from Thammasat University. Additionally, I'm studying for a master's degree in occupational health and safety at Thammasat University. Currently I'm starting a career in web development. "`}
+              {`" Hi! I'm Bosch (Ratchapong Chaiyadej) from Nonthaburi, Thailand. I've got a bachelor's in environmental health from Thammasat University and recently wrapped up my master's in occupational health and safety there too. I also just graduated from a full stack web development bootcamp at TechUp, where I picked up skills in React, Next.js, JavaScript, HTML, CSS, tailwind, PostgreSQL, MongoDB and Git. Now, I'm ready to dive into the world of web development! "`}
               &nbsp;
             </p>
             <div className="my-8">

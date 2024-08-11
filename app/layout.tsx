@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./styles/globals.css";
+import { ScrollProvider } from "./contexts/ScrollContext";
 
 export const metadata: Metadata = {
   title: "bosch-portfolio",
@@ -13,7 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <ScrollProvider>{children}</ScrollProvider>
+      </body>
     </html>
   );
 }
