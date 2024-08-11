@@ -6,11 +6,11 @@ import TechSkills from "./TechnicalSkills";
 
 const About: React.FC = () => {
   return (
-    <section className="h-screen bg-base-100 pl-14" id="about">
+    <section className="min-h-screen h-fit bg-base-100 pl-14" id="about">
       <div className="w-full h-full p-10">
-        <h1 className="text-5xl font-bold hover:text-accent my-5">About Me</h1>
+        <h1 className="text-3xl font-bold hover:text-accent py-5">About Me</h1>
         <div className="grid md:grid-cols-2 xl:grid-cols-3">
-          <div className="h-fit w-full bg-warning text-warning-content rounded-xl p-10">
+          <div className="h-fit w-full bg-warning text-warning-content rounded-xl p-10 mb-10">
             <p className="text-justify">
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               {`" Hi! My name is Ratchapong Chaiyadej, you can call me Bos. I live in Nonthaburi, Thailand. I graduated with a bachelor's degree in environmental health from Thammasat University. Additionally, I'm studying for a master's degree in occupational health and safety at Thammasat University. Currently I'm starting a career in web development. "`}
