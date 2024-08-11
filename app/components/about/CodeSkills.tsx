@@ -36,7 +36,7 @@ const CodeSkills: React.FC = () => (
     <h2 className="text-2xl font-bold border-b-2 border-accent pb-1 hover:text-accent">
       Coding Skills
     </h2>
-    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 mt-4 p-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 mt-4 p-4">
       {codeSkills.map(({ icon: Icon, label }, index) => (
         <div key={index} className="flex flex-col items-start">
           <div className="flex items-center gap-3">
