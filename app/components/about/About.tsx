@@ -1,10 +1,15 @@
+"use client";
+
 import React from "react";
 import CodeSkills from "./CodeSkills";
 import ToolsAndPrograms from "./ToolsAndPrograms";
 import { MdSimCardDownload } from "react-icons/md";
 import TechSkills from "./TechnicalSkills";
+import { useScroll } from "../../contexts/ScrollContext";
 
 const About: React.FC = () => {
+  const { scrollTo } = useScroll();
+
   return (
     <section id="about" className="min-h-screen h-fit bg-base-100 pl-14">
       <div className="w-full h-full p-10">
@@ -21,8 +26,11 @@ const About: React.FC = () => {
               <p className="text-end font-bold">Bosch</p>
             </div>
             <div className="flex justify-end">
-              <button className="btn btn-accent text-accent-content hover:text-primary-content hover:bg-primary border-0 ease-in-out hover:-translate-y-0.5 hover:scale-110 duration-300">
-                Resume
+              <button
+                onClick={() => scrollTo("experience")}
+                className="btn btn-accent text-accent-content hover:text-primary-content hover:bg-primary border-0 ease-in-out hover:-translate-y-0.5 hover:scale-110 duration-300"
+              >
+                Experience
                 <MdSimCardDownload className="animate-bounce" />
               </button>
             </div>
