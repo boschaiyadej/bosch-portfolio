@@ -7,6 +7,7 @@ import { GoHomeFill, GoPersonFill } from "react-icons/go";
 import { RiGraduationCapFill } from "react-icons/ri";
 import { MdOutlineChatBubble } from "react-icons/md";
 import { useScroll } from "../../contexts/ScrollContext";
+import ThemeToggle from "./ThemeToggle";
 
 const Sidebar: React.FC = () => {
   const { scrollTo } = useScroll();
@@ -77,6 +78,9 @@ const Sidebar: React.FC = () => {
                 }
               >
                 <SiGooglescholar className="text-xl text-neutral-content hover:text-accent ease-in-out hover:-translate-y-1 hover:scale-110 duration-300" />
+              </li>
+              <li>
+                <ThemeToggle />
               </li>
             </ul>
           </div>
