@@ -80,7 +80,9 @@ const Sidebar: React.FC = () => {
                 <SiGooglescholar className="text-xl text-neutral-content hover:text-accent ease-in-out hover:-translate-y-1 hover:scale-110 duration-300" />
               </li>
               <li>
-                <ThemeToggle />
+                <div className="btn rounded-full p-1 hover:text-accent ease-in-out">
+                  <ThemeToggle />
+                </div>
               </li>
             </ul>
           </div>
