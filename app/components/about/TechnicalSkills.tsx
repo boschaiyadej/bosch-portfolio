@@ -14,7 +14,7 @@ const techSkills = [
 
 const TechSkills: React.FC = () => (
   <div className="px-10">
-    <h2 className="text-2xl font-bold border-b-2 border-accent pb-1 hover:text-accent">
+    <h2 className="sm:text-2xl text-xl font-bold border-b-2 border-accent pb-1 hover:text-accent">
       Technical Skills
     </h2>
     <div className="grid grid-cols-1 xl:grid-cols-3 gap-4 mt-4 p-4">
