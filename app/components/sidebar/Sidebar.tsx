@@ -18,7 +18,7 @@ const Sidebar: React.FC = () => {
 
   return (
     <aside
-      className="fixed h-full left-0 top-0 bottom-0 bg-neutral w-14"
+      className="fixed h-full left-0 top-0 bottom-0 bg-neutral sm:w-14 w-12"
       id="sidebar"
     >
       <div className="flex flex-col justify-between items-center h-full w-full py-8">

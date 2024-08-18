@@ -56,7 +56,7 @@ const ContactForm: React.FC = () => {
       } else {
         setErrorMessage("Failed to send message. Please try again.");
       }
-    } catch (error) {
+    } catch {
       setErrorMessage("An error occurred. Please try again.");
     } finally {
       setIsSubmitting(false);
@@ -66,7 +66,7 @@ const ContactForm: React.FC = () => {
   return (
     <section>
       <form name="contact-form" onSubmit={handleSubmit}>
-        <div className="mt-5 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+        <div className="mt-5 grid grid-cols-1 gap-x-6 sm:gap-y-8 gap-y-0 sm:grid-cols-6">
           <div className="sm:col-span-3 mt-2">
             <label
               htmlFor="firstName"

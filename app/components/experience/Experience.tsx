@@ -10,7 +10,10 @@ const Experience: React.FC = () => {
   const training = TrainingData;
 
   return (
-    <section className="min-h-screen h-fit bg-base-300 pl-14" id="experience">
+    <section
+      className="min-h-screen h-fit bg-base-300 sm:pl-14 pl-12"
+      id="experience"
+    >
       <div className="w-full h-full p-10">
         <h1 className="text-3xl font-bold hover:text-accent py-5">
           Experience
