@@ -18,9 +18,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/icons/B-icon.jpg" />
+
         <Script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-QPHQ3FCGRF"
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
         ></Script>
         <Script id="google-analytics">
           {`
@@ -28,7 +30,7 @@ export default function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', 'G-QPHQ3FCGRF');
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
           `}
         </Script>
       </head>
